@@ -114,11 +114,12 @@ class Seasons {
   next() {
     let result = this.seasons[this.currentSeason]
     if(this.currentSeason === 3 ){
-      this.currentSeason = 0
+      this.currentSeason = 0;
     }
     else{ ++this.currentSeason}
+  
     return result;
-    }
+  }
 
     // ✨ implement
   }

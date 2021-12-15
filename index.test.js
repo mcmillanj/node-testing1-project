@@ -101,7 +101,7 @@ describe('[Exercise 5] Seasons', () => {
    })
   test('[14] the 40th call of seasons.next returns "spring"', () => {
   for(let i = 0; i < 39; i++){seasons.next()}
-  
+
   expect(seasons.next()).toBe('spring')
  })
 })
