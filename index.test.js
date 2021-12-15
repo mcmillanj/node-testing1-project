@@ -44,17 +44,18 @@ describe('[Exercise 3] findLargestInteger', () => {const integers = [{integer:1,
 describe('[Exercise 4] Counter', () => {
   let counter
   beforeEach(() => {
-    counter = new utils.Counter(4) // each test must start with a fresh couter
+    counter = new utils.Counter(3) // each test must start with a fresh couter
   })
   / test('[6] the FIRST CALL of counter.countDown returns the initial count', () => {
-    expect(counter.countDown()).toBe(4)
+    expect(counter.countDown()).toBe(3)
 
   })
    test('[7] the SECOND CALL of counter.countDown returns the initial count minus one', () => {
-    expect(counter.countDown()).toEqual(3)
+     counter.countDown();
+    expect(counter.countDown()).toEqual(2)
    })
    test('[8] the count eventually reaches zero but does not go below zero', () => {
- counter.countDown();
+     counter.countDown();
     counter.countDown();
     counter.countDown();
     counter.countDown();
